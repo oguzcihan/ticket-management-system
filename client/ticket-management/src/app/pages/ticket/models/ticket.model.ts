@@ -6,6 +6,7 @@ export interface TicketModel{
   title?: string;
   priority?: string;
   category?: string;
+  description?: string;
   date?: Date;
   status?: string;
   assignedTo?: string; // todo: UserModel gelecek

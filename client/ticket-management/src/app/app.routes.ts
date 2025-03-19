@@ -3,8 +3,7 @@ import {DashboardComponent} from "./dashboard/dashboard.component";
 import {DefaultLayoutComponent} from "./layouts/default-layout.component";
 import {EmptyLayoutComponent} from "./layouts/empty-layout.component";
 import {Error404Component} from "./core/errors/error404/error404.component";
-import {TicketCreateUpdateComponent} from "./pages/ticket/ticket-create-update/ticket-create-update.component";
-import {TicketListComponent} from "./pages/ticket/ticket-list/ticket-list.component";
+import {TicketListComponent} from "./pages/ticket/ticket-operations/ticket-operations.component";
 
 
 export const routes: Routes = [
@@ -14,7 +13,6 @@ export const routes: Routes = [
     // canActivate: [AuthGuard],
     children: [
       {path: '', title: 'Dashboard', component: DashboardComponent},
-      {path: 'ticket-create', title: 'Ticket Oluştur', component: TicketCreateUpdateComponent},
       {path: 'ticket-list', title: 'Ticke Listesi', component: TicketListComponent},
     ]
   },
